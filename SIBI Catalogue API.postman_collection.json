@@ -1,0 +1,1790 @@
+{
+	"info": {
+		"_postman_id": "0e3cc23f-a2ac-4790-b16c-b14adf673101",
+		"name": "SIBI Catalogue API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16620726"
+	},
+	"item": [
+		{
+			"name": "getPenggerakTextBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&title=buku&level_smp&type_pdf",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getPenggerakTextBooks"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5",
+							"description": "Jumlah yang ingin ditampilkan tiap halaman"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "Halaman ke"
+						},
+						{
+							"key": "title",
+							"value": "buku"
+						},
+						{
+							"key": "level_smp",
+							"value": null
+						},
+						{
+							"key": "type_pdf",
+							"value": null
+						}
+					]
+				},
+				"description": "Get Catalogue dengan Kategori Buku Teks \nparameter yang dapat digunakan:\n\"limit\"\n\"offset\"\n\"title\"\n\"slug\"\n\"image\"\n\"attachment\"\n\"description\"\n\"class\"\n\"level\"\n\"writer\"\n\"reviewer\"\n\"translator\"\n\"adapter\"\n\"designer\"\n\"cover_designer\"\n\"ilustrator\"\n\"editor\"\n\"publisher\"\n\"published_year\"\n\"language\"\n\"context\"\n\"subject\"\n\"format\"\n\"isbn\"\n\"curriculum\"\n\"collation\"\n\"type\"\n\"edition\"\n\"unit\"\n\"status\"\n\"category\"\n\"book_type\"\n\"version\""
+			},
+			"response": [
+				{
+					"name": "Daftar Filter yang dapat digunakan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&type_pdf=true&type_audio=true&type_interactive=true&level_sd=true&level_smp=true&level_sma=true&class_1=true&class_2=true&class_3=true&class_4=true&class_5=true&class_6=true&class_7=true&class_8=true&class_9=true&class_10=true&class_11=true&class_12=true&subject_ipa=true&subject_ips=true&subject_indonesia=true&subject_inggris=true&subject_pjok=true&subject_ppkn=true&subject_matematika=true&subject_informatika=true&subject_agama=true&subject_sejarah=true&subject_seni_rupa=true&subject_seni_tari=true&subject_seni_musik=true&subject_seni_teater=true&subject_ipas=true&title=matematika",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								},
+								{
+									"key": "type_audio",
+									"value": "true"
+								},
+								{
+									"key": "type_interactive",
+									"value": "true"
+								},
+								{
+									"key": "level_sd",
+									"value": "true"
+								},
+								{
+									"key": "level_smp",
+									"value": "true"
+								},
+								{
+									"key": "level_sma",
+									"value": "true"
+								},
+								{
+									"key": "class_1",
+									"value": "true"
+								},
+								{
+									"key": "class_2",
+									"value": "true"
+								},
+								{
+									"key": "class_3",
+									"value": "true"
+								},
+								{
+									"key": "class_4",
+									"value": "true"
+								},
+								{
+									"key": "class_5",
+									"value": "true"
+								},
+								{
+									"key": "class_6",
+									"value": "true"
+								},
+								{
+									"key": "class_7",
+									"value": "true"
+								},
+								{
+									"key": "class_8",
+									"value": "true"
+								},
+								{
+									"key": "class_9",
+									"value": "true"
+								},
+								{
+									"key": "class_10",
+									"value": "true"
+								},
+								{
+									"key": "class_11",
+									"value": "true"
+								},
+								{
+									"key": "class_12",
+									"value": "true"
+								},
+								{
+									"key": "subject_ipa",
+									"value": "true"
+								},
+								{
+									"key": "subject_ips",
+									"value": "true"
+								},
+								{
+									"key": "subject_indonesia",
+									"value": "true"
+								},
+								{
+									"key": "subject_inggris",
+									"value": "true"
+								},
+								{
+									"key": "subject_pjok",
+									"value": "true"
+								},
+								{
+									"key": "subject_ppkn",
+									"value": "true"
+								},
+								{
+									"key": "subject_matematika",
+									"value": "true"
+								},
+								{
+									"key": "subject_informatika",
+									"value": "true"
+								},
+								{
+									"key": "subject_agama",
+									"value": "true"
+								},
+								{
+									"key": "subject_sejarah",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_rupa",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_tari",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_musik",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_teater",
+									"value": "true"
+								},
+								{
+									"key": "subject_ipas",
+									"value": "true"
+								},
+								{
+									"key": "title",
+									"value": "matematika"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Contoh Mencari buku berdasarkan judul dan menggunakan filter buku jenis pdf",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&title=matematika&type_pdf=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "title",
+									"value": "matematika"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe PDF",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&type_pdf=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe Interaktif",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&type_interactive=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_interactive",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe Audio",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&type_audio=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_audio",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "getTextBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/catalogue/getTextBooks?limit=5&offset=0",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getTextBooks"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5",
+							"description": "Jumlah yang ingin ditampilkan tiap halaman"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "Halaman ke"
+						}
+					]
+				},
+				"description": "Get Catalogue dengan Kategori Buku Teks \nparameter yang dapat digunakan:\n\"limit\"\n\"offset\"\n\"title\"\n\"slug\"\n\"image\"\n\"attachment\"\n\"description\"\n\"class\"\n\"level\"\n\"writer\"\n\"reviewer\"\n\"translator\"\n\"adapter\"\n\"designer\"\n\"cover_designer\"\n\"ilustrator\"\n\"editor\"\n\"publisher\"\n\"published_year\"\n\"language\"\n\"context\"\n\"subject\"\n\"format\"\n\"isbn\"\n\"curriculum\"\n\"collation\"\n\"type\"\n\"edition\"\n\"unit\"\n\"status\"\n\"category\"\n\"book_type\"\n\"version\""
+			},
+			"response": [
+				{
+					"name": "Daftar Filter yang dapat digunakan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&type_pdf=true&type_audio=true&type_interactive=true&level_sd=true&level_smp=true&level_sma=true&class_1=true&class_2=true&class_3=true&class_4=true&class_5=true&class_6=true&class_7=true&class_8=true&class_9=true&class_10=true&class_11=true&class_12=true&subject_ipa=true&subject_ips=true&subject_indonesia=true&subject_inggris=true&subject_pjok=true&subject_ppkn=true&subject_matematika=true&subject_informatika=true&subject_agama=true&subject_sejarah=true&subject_seni_rupa=true&subject_seni_tari=true&subject_seni_musik=true&subject_seni_teater=true&subject_ipas=true&title=matematika",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								},
+								{
+									"key": "type_audio",
+									"value": "true"
+								},
+								{
+									"key": "type_interactive",
+									"value": "true"
+								},
+								{
+									"key": "level_sd",
+									"value": "true"
+								},
+								{
+									"key": "level_smp",
+									"value": "true"
+								},
+								{
+									"key": "level_sma",
+									"value": "true"
+								},
+								{
+									"key": "class_1",
+									"value": "true"
+								},
+								{
+									"key": "class_2",
+									"value": "true"
+								},
+								{
+									"key": "class_3",
+									"value": "true"
+								},
+								{
+									"key": "class_4",
+									"value": "true"
+								},
+								{
+									"key": "class_5",
+									"value": "true"
+								},
+								{
+									"key": "class_6",
+									"value": "true"
+								},
+								{
+									"key": "class_7",
+									"value": "true"
+								},
+								{
+									"key": "class_8",
+									"value": "true"
+								},
+								{
+									"key": "class_9",
+									"value": "true"
+								},
+								{
+									"key": "class_10",
+									"value": "true"
+								},
+								{
+									"key": "class_11",
+									"value": "true"
+								},
+								{
+									"key": "class_12",
+									"value": "true"
+								},
+								{
+									"key": "subject_ipa",
+									"value": "true"
+								},
+								{
+									"key": "subject_ips",
+									"value": "true"
+								},
+								{
+									"key": "subject_indonesia",
+									"value": "true"
+								},
+								{
+									"key": "subject_inggris",
+									"value": "true"
+								},
+								{
+									"key": "subject_pjok",
+									"value": "true"
+								},
+								{
+									"key": "subject_ppkn",
+									"value": "true"
+								},
+								{
+									"key": "subject_matematika",
+									"value": "true"
+								},
+								{
+									"key": "subject_informatika",
+									"value": "true"
+								},
+								{
+									"key": "subject_agama",
+									"value": "true"
+								},
+								{
+									"key": "subject_sejarah",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_rupa",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_tari",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_musik",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_teater",
+									"value": "true"
+								},
+								{
+									"key": "subject_ipas",
+									"value": "true"
+								},
+								{
+									"key": "title",
+									"value": "matematika"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Contoh Mencari buku berdasarkan judul dan menggunakan filter buku jenis pdf",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&title=matematika&type_pdf=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "title",
+									"value": "matematika"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe PDF",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&type_pdf=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe Interaktif",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&type_interactive=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_interactive",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe Audio",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&type_audio=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_audio",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "getLatestBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/catalogue",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue"
+					],
+					"query": [
+						{
+							"key": "filter[catalogue][title]",
+							"value": "Informatika",
+							"disabled": true
+						},
+						{
+							"key": "filter[catalogue][writer]",
+							"value": "Budiman",
+							"disabled": true
+						},
+						{
+							"key": "filter[catalogue][published_year]",
+							"value": "2020",
+							"disabled": true
+						},
+						{
+							"key": "filter[catalogue][isbn]",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "Get Latest Book by entries \r\n@param qty default 10"
+			},
+			"response": []
+		},
+		{
+			"name": "getTextBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/api/catalogue/getTextBooks?title=Sejarah&limit=5&offset=0&sort=desc",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getTextBooks"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Sejarah"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"description": "Halaman ke"
+						},
+						{
+							"key": "sort",
+							"value": "desc"
+						}
+					]
+				},
+				"description": "Get Catalogue dengan Kategori Buku Teks \nparameter yang dapat digunakan:\n\"limit\"\n\"offset\"\n\"title\"\n\"slug\"\n\"image\"\n\"attachment\"\n\"description\"\n\"class\"\n\"level\"\n\"writer\"\n\"reviewer\"\n\"translator\"\n\"adapter\"\n\"designer\"\n\"cover_designer\"\n\"ilustrator\"\n\"editor\"\n\"publisher\"\n\"published_year\"\n\"language\"\n\"context\"\n\"subject\"\n\"format\"\n\"isbn\"\n\"curriculum\"\n\"collation\"\n\"type\"\n\"edition\"\n\"unit\"\n\"status\"\n\"category\"\n\"book_type\"\n\"version\""
+			},
+			"response": [
+				{
+					"name": "Daftar Filter yang dapat digunakan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&type_pdf=true&type_audio=true&type_interactive=true&level_sd=true&level_smp=true&level_sma=true&class_1=true&class_2=true&class_3=true&class_4=true&class_5=true&class_6=true&class_7=true&class_8=true&class_9=true&class_10=true&class_11=true&class_12=true&subject_ipa=true&subject_ips=true&subject_indonesia=true&subject_inggris=true&subject_pjok=true&subject_ppkn=true&subject_matematika=true&subject_informatika=true&subject_agama=true&subject_sejarah=true&subject_seni_rupa=true&subject_seni_tari=true&subject_seni_musik=true&subject_seni_teater=true&subject_ipas=true&title=matematika",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								},
+								{
+									"key": "type_audio",
+									"value": "true"
+								},
+								{
+									"key": "type_interactive",
+									"value": "true"
+								},
+								{
+									"key": "level_sd",
+									"value": "true"
+								},
+								{
+									"key": "level_smp",
+									"value": "true"
+								},
+								{
+									"key": "level_sma",
+									"value": "true"
+								},
+								{
+									"key": "class_1",
+									"value": "true"
+								},
+								{
+									"key": "class_2",
+									"value": "true"
+								},
+								{
+									"key": "class_3",
+									"value": "true"
+								},
+								{
+									"key": "class_4",
+									"value": "true"
+								},
+								{
+									"key": "class_5",
+									"value": "true"
+								},
+								{
+									"key": "class_6",
+									"value": "true"
+								},
+								{
+									"key": "class_7",
+									"value": "true"
+								},
+								{
+									"key": "class_8",
+									"value": "true"
+								},
+								{
+									"key": "class_9",
+									"value": "true"
+								},
+								{
+									"key": "class_10",
+									"value": "true"
+								},
+								{
+									"key": "class_11",
+									"value": "true"
+								},
+								{
+									"key": "class_12",
+									"value": "true"
+								},
+								{
+									"key": "subject_ipa",
+									"value": "true"
+								},
+								{
+									"key": "subject_ips",
+									"value": "true"
+								},
+								{
+									"key": "subject_indonesia",
+									"value": "true"
+								},
+								{
+									"key": "subject_inggris",
+									"value": "true"
+								},
+								{
+									"key": "subject_pjok",
+									"value": "true"
+								},
+								{
+									"key": "subject_ppkn",
+									"value": "true"
+								},
+								{
+									"key": "subject_matematika",
+									"value": "true"
+								},
+								{
+									"key": "subject_informatika",
+									"value": "true"
+								},
+								{
+									"key": "subject_agama",
+									"value": "true"
+								},
+								{
+									"key": "subject_sejarah",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_rupa",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_tari",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_musik",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_teater",
+									"value": "true"
+								},
+								{
+									"key": "subject_ipas",
+									"value": "true"
+								},
+								{
+									"key": "title",
+									"value": "matematika"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Contoh Mencari buku berdasarkan judul dan menggunakan filter buku jenis pdf",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&title=matematika&type_pdf=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "title",
+									"value": "matematika"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe PDF",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&type_pdf=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe Interaktif",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&type_interactive=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_interactive",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe Audio",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getTextBooks?limit=5&offset=0&type_audio=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_audio",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "getPenggerakTextBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/catalogue/getPenggerakTextBooks?order_by=updated_at&sort=asc",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getPenggerakTextBooks"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Sejarah",
+							"disabled": true
+						},
+						{
+							"key": "type_audio",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "level_sdlb",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "order_by",
+							"value": "updated_at"
+						},
+						{
+							"key": "sort",
+							"value": "asc"
+						}
+					]
+				},
+				"description": "Get Catalogue dengan Kategori Buku Teks \nparameter yang dapat digunakan:\n\"limit\"\n\"offset\"\n\"title\"\n\"slug\"\n\"image\"\n\"attachment\"\n\"description\"\n\"class\"\n\"level\"\n\"writer\"\n\"reviewer\"\n\"translator\"\n\"adapter\"\n\"designer\"\n\"cover_designer\"\n\"ilustrator\"\n\"editor\"\n\"publisher\"\n\"published_year\"\n\"language\"\n\"context\"\n\"subject\"\n\"format\"\n\"isbn\"\n\"curriculum\"\n\"collation\"\n\"type\"\n\"edition\"\n\"unit\"\n\"status\"\n\"category\"\n\"book_type\"\n\"version\""
+			},
+			"response": [
+				{
+					"name": "Daftar Filter yang dapat digunakan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&type_pdf=true&type_audio=true&type_interactive=true&level_sd=true&level_smp=true&level_sma=true&class_1=true&class_2=true&class_3=true&class_4=true&class_5=true&class_6=true&class_7=true&class_8=true&class_9=true&class_10=true&class_11=true&class_12=true&subject_ipa=true&subject_ips=true&subject_indonesia=true&subject_inggris=true&subject_pjok=true&subject_ppkn=true&subject_matematika=true&subject_informatika=true&subject_agama=true&subject_sejarah=true&subject_seni_rupa=true&subject_seni_tari=true&subject_seni_musik=true&subject_seni_teater=true&subject_ipas=true&title=matematika",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								},
+								{
+									"key": "type_audio",
+									"value": "true"
+								},
+								{
+									"key": "type_interactive",
+									"value": "true"
+								},
+								{
+									"key": "level_sd",
+									"value": "true"
+								},
+								{
+									"key": "level_smp",
+									"value": "true"
+								},
+								{
+									"key": "level_sma",
+									"value": "true"
+								},
+								{
+									"key": "class_1",
+									"value": "true"
+								},
+								{
+									"key": "class_2",
+									"value": "true"
+								},
+								{
+									"key": "class_3",
+									"value": "true"
+								},
+								{
+									"key": "class_4",
+									"value": "true"
+								},
+								{
+									"key": "class_5",
+									"value": "true"
+								},
+								{
+									"key": "class_6",
+									"value": "true"
+								},
+								{
+									"key": "class_7",
+									"value": "true"
+								},
+								{
+									"key": "class_8",
+									"value": "true"
+								},
+								{
+									"key": "class_9",
+									"value": "true"
+								},
+								{
+									"key": "class_10",
+									"value": "true"
+								},
+								{
+									"key": "class_11",
+									"value": "true"
+								},
+								{
+									"key": "class_12",
+									"value": "true"
+								},
+								{
+									"key": "subject_ipa",
+									"value": "true"
+								},
+								{
+									"key": "subject_ips",
+									"value": "true"
+								},
+								{
+									"key": "subject_indonesia",
+									"value": "true"
+								},
+								{
+									"key": "subject_inggris",
+									"value": "true"
+								},
+								{
+									"key": "subject_pjok",
+									"value": "true"
+								},
+								{
+									"key": "subject_ppkn",
+									"value": "true"
+								},
+								{
+									"key": "subject_matematika",
+									"value": "true"
+								},
+								{
+									"key": "subject_informatika",
+									"value": "true"
+								},
+								{
+									"key": "subject_agama",
+									"value": "true"
+								},
+								{
+									"key": "subject_sejarah",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_rupa",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_tari",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_musik",
+									"value": "true"
+								},
+								{
+									"key": "subject_seni_teater",
+									"value": "true"
+								},
+								{
+									"key": "subject_ipas",
+									"value": "true"
+								},
+								{
+									"key": "title",
+									"value": "matematika"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Contoh Mencari buku berdasarkan judul dan menggunakan filter buku jenis pdf",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&title=matematika&type_pdf=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "title",
+									"value": "matematika"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe PDF",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&type_pdf=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_pdf",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe Interaktif",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&type_interactive=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_interactive",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Buku Dengan Tipe Audio",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/catalogue/getPenggerakTextBooks?limit=5&offset=0&type_audio=true",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"catalogue",
+								"getPenggerakTextBooks"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5",
+									"description": "Jumlah yang ingin ditampilkan tiap halaman"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Halaman ke"
+								},
+								{
+									"key": "type_audio",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "getDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/catalogue/getDetails?slug=buku-audio-ilmu-pengetahuan-alam-smp-kelas-8",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getDetails"
+					],
+					"query": [
+						{
+							"key": "slug",
+							"value": "buku-audio-ilmu-pengetahuan-alam-smp-kelas-8"
+						}
+					]
+				},
+				"description": "getDetails Catalague by Id\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "getBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/catalogue/getBooks?limit=5&offset=2",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getBooks"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5",
+							"description": "Jumlah yang akan ditampilkan"
+						},
+						{
+							"key": "offset",
+							"value": "2",
+							"description": "halaman ke dari(0)"
+						}
+					]
+				},
+				"description": "get Catalogue by limit and offset"
+			},
+			"response": []
+		},
+		{
+			"name": "getNonTextBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.buku.cloudapp.web.id/api/catalogue/getNonTextBooks?limit=2000&tag=transisi",
+					"protocol": "https",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getNonTextBooks"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2000"
+						},
+						{
+							"key": "title",
+							"value": "Arkeologi",
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "desc",
+							"disabled": true
+						},
+						{
+							"key": "tag",
+							"value": "transisi"
+						}
+					]
+				},
+				"description": "Get Catalogue dengan Kategori Buku Non Teks \nparameter yang dapat digunakan:\n\"limit\"\n\"offset\"\n\"title\"\n\"slug\"\n\"image\"\n\"attachment\"\n\"description\"\n\"class\"\n\"level\"\n\"writer\"\n\"reviewer\"\n\"translator\"\n\"adapter\"\n\"designer\"\n\"cover_designer\"\n\"ilustrator\"\n\"editor\"\n\"publisher\"\n\"published_year\"\n\"language\"\n\"context\"\n\"subject\"\n\"format\"\n\"isbn\"\n\"curriculum\"\n\"collation\"\n\"type\"\n\"edition\"\n\"unit\"\n\"status\"\n\"category\"\n\"book_type\"\n\"version\""
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/catalogue/search",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"search"
+					]
+				},
+				"description": "Get Latest Book by entries \r\n@param qty default 10"
+			},
+			"response": []
+		},
+		{
+			"name": "getPopularCatalogue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/statistic/getPopularCatalogue?qty=10",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"statistic",
+						"getPopularCatalogue"
+					],
+					"query": [
+						{
+							"key": "qty",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBooksByTag",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.buku.cloudapp.web.id/api/catalogue/getBooksByTag?tag=STEM&page=2&limit=9",
+					"protocol": "https",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getBooksByTag"
+					],
+					"query": [
+						{
+							"key": "tag",
+							"value": "STEM"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "9"
+						}
+					]
+				},
+				"description": "Get Catalogue By Type\r\nParameter \r\ntype=BA&limit=5&offset=0"
+			},
+			"response": []
+		},
+		{
+			"name": "getBooksByQuery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.buku.cloudapp.web.id/api/catalogue/getBooksByQuery?query=interaktif&limit=5&offset=0",
+					"protocol": "http",
+					"host": [
+						"api",
+						"buku",
+						"cloudapp",
+						"web",
+						"id"
+					],
+					"path": [
+						"api",
+						"catalogue",
+						"getBooksByQuery"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "interaktif"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				},
+				"description": "Get Catalogue by Query (Title)\r\nquery=interaktif&limit=5&offset=0"
+			},
+			"response": []
+		}
+	]
+}
