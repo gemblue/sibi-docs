@@ -64,6 +64,16 @@ const FIELD_GLOSSARY = [
     ]
   },
   {
+    group: "HET — Harga Eceran Tertinggi",
+    fields: [
+      { name: "het_id",       type: "string", desc: "ID data HET di database. Bernilai <code>null</code> bila buku belum memiliki data HET. Tersedia pada endpoint <strong>Buku Kurikulum 2013</strong>, <strong>Buku Kurikulum Merdeka</strong>, dan <strong>Detail Buku</strong>." },
+      { name: "het_title",    type: "string", desc: "Judul buku sebagaimana tercatat pada data HET; bisa berbeda dari <code>title</code>. Bernilai <code>null</code> bila belum ada. Tersedia pada <strong>Buku Kurikulum 2013</strong> dan <strong>Buku Kurikulum Merdeka</strong>." },
+      { name: "het",          type: "array",  desc: "Daftar harga HET per zona distribusi. Berisi objek <code>{ zone, price }</code>. Bernilai <code>[]</code> bila buku belum memiliki data HET." },
+      { name: "zone",         type: "string", desc: "Kode zona distribusi HET: <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5a</code>, <code>5b</code>." },
+      { name: "price",        type: "number", desc: "Harga eceran tertinggi untuk zona tersebut, dalam Rupiah (contoh: <code>16100</code>)." },
+    ]
+  },
+  {
     group: "Parameter Khusus Filter",
     fields: [
       { name: "type_pdf",         type: "boolean", desc: "Filter: hanya tampilkan buku tipe <strong>PDF</strong>. Beri nilai <code>true</code>." },

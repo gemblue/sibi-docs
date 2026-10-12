@@ -4,6 +4,14 @@
 
 const BASE_URL = "https://api.buku.cloudapp.web.id";
 
+/* ── Helpers ───────────────────────────────────────── */
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 /* ── Init ──────────────────────────────────────────── */
 document.addEventListener("DOMContentLoaded", () => {
   buildSidebar();
@@ -137,9 +145,33 @@ function renderEndpoint(ep) {
 
   let notesHtml = ep.notes ? `<div class="callout"><i class="fa-solid fa-lightbulb"></i> ${ep.notes}</div>` : "";
 
+  let responseFieldsHtml = "";
+  if (ep.responseFields && ep.responseFields.length > 0) {
+    responseFieldsHtml = `
+      <h3>Field Response Tambahan</h3>
+      <table>
+        <thead><tr><th>Field</th><th>Tipe</th><th>Deskripsi</th></tr></thead>
+        <tbody>
+          ${ep.responseFields.map(f => `
+            <tr>
+              <td><code>${f.name}</code></td>
+              <td><span class="tag tag-${f.type}">${f.type}</span></td>
+              <td>${f.desc}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    `;
+  }
+
   let exampleHtml = ep.example ? `
     <h3>Contoh Request</h3>
     <pre><code>GET ${BASE_URL}${ep.example}</code></pre>
+  ` : "";
+
+  let sampleResponseHtml = ep.sampleResponse ? `
+    <h3>Contoh Response</h3>
+    <pre><code>${escapeHtml(JSON.stringify(ep.sampleResponse, null, 2))}</code></pre>
   ` : "";
 
   // Special note for endpoints that support all boolean filters
@@ -168,7 +200,9 @@ function renderEndpoint(ep) {
         ${notesHtml}
         ${paramsHtml}
         ${filterNote}
+        ${responseFieldsHtml}
         ${exampleHtml}
+        ${sampleResponseHtml}
       </div>
     </div>
 
